@@ -11,7 +11,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-namespace RoutinePacerv1
+namespace RoutinePacerv2
 {
     public partial class F_AdminPanel : Form
     {
@@ -27,10 +27,14 @@ namespace RoutinePacerv1
             // Create an admin object to maintain users
             _admin = new Admin();
 
-            // Check if admin exists, if so, deserialize it
+            // Check if admin exists,
             if (File.Exists("Admin.bin"))
             {
-                _admin = LoadAdmin();
+                // Check if the file is empty, if not, deserialize
+                if (new FileInfo("Admin.bin").Length > 0)
+                {
+                    _admin = LoadAdmin();
+                }
             }
 
             // Set and display list contents

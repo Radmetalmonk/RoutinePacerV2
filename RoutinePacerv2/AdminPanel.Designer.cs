@@ -1,4 +1,4 @@
-﻿namespace RoutinePacerv1
+﻿namespace RoutinePacerv2
 {
     partial class F_AdminPanel
     {

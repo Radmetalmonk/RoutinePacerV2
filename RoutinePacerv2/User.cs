@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-namespace RoutinePacerv1
+namespace RoutinePacerv2
 {
     [Serializable]
     public class User

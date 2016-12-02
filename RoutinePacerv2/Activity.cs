@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoutinePacerv1
+namespace RoutinePacerv2
 {
+    [Serializable]
     public class Activity
     {
         string _name;

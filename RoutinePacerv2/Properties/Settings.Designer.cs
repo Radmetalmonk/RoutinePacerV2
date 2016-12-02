@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RoutinePacerv1.Properties
+namespace RoutinePacerv2.Properties
 {
 
 
